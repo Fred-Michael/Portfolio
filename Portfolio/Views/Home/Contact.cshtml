@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="jumbotron jumbotron-fluid mb-5">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 lead"><h2>@ViewBag.Title</h2></div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5">
+    <div class="row text-center w-75 mx-auto">
+        <div class="col-12 mb-2">
+            <img class="rounded-circle" src="~/resources/Moi.jpg" width="60" height="60" />
+        </div>
+        <div class="card mt-2">
+            <div class="card-body">
+                <p>
+                    I'm currently developing my skills as a fullstack .NET developer. If you are interested in hiring me for your project please use the form below to get in touch.
+                    Want to know how I work and what I can offer?
+                </p>
+
+                <p class="bold lead">You can also find me on the following channels</p>
+                <a href="javascript:void();" class="col-4 d-inline"><img src="https://img.icons8.com/metro/26/000000/linkedin.png" /></a>
+                <a href="javascript:void();" class="col-4 d-inline"><img src="https://img.icons8.com/material-sharp/26/000000/email.png" /></a>
+                <a href="javascript:void();" class="col-4 d-inline"><img src="https://img.icons8.com/fluent/26/000000/github.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form class="contact-form col-lg-8 mx-lg-auto">
+    <h3 class="text-center display-4 mt-5 mb-3">Get In Touch</h3>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label class="sr-only" for="cname">Name</label>
+            <input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="2" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+            <label class="sr-only" for="cemail">Email</label>
+            <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required="" aria-required="true">
+        </div>
+        <div class="form-group col-12">
+            <label class="sr-only" for="cmessage">Your message</label>
+            <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
+        </div>
+        <div class="form-group col-12">
+            <button type="submit" class="btn btn-block py-2" style="background-color: #41A4F5;">Message Me</button>
+        </div>
+    </div>
+</form>
